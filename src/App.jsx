@@ -166,9 +166,10 @@ const Index = () => {
         rowKey="id"
         search={{
           labelWidth: 'auto',
+          optionRender: ((searchConfig,formProps,dom) => {console.log(searchConfig, formProps, dom);}),
         }}
         options={{
-          // 密度
+          // 疏密程度
           density: true,
           // fullScreen: OptionsType,
           // reload: OptionsType,
